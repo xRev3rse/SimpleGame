@@ -1,0 +1,91 @@
+/* Animações */
+.anim {
+    animation: character 600ms infinite linear;
+}
+@keyframes obstacle {
+    0%{left: 900px;}
+    100% {left: -40px;}
+}
+@keyframes character{
+    0% {top: 150px;}
+    30% {top: 80px;}
+
+    70% {top: 80px}
+    100% {top: 150px}
+}
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/* =----= */
+
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 175), rgba(0, 0, 105, 0.884));
+}
+
+h1#t {
+    display: inline;
+}
+
+p#cred {
+    display: inline;
+    margin-left: 25px;
+}
+
+#gameover {
+    color: #fff;
+    text-shadow: 2px 2px 0px black;
+    
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    user-select: none;
+}
+
+#title{
+    background-color: rgb(103, 103, 255);
+    color: #fff;
+    text-shadow: 2px 2px 0px #000;
+    box-shadow: 0px 0px 15px #fff;
+    
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+div#cenario {
+    border: 2px solid #000;
+    box-shadow: 0px 0px 15px #fff;
+    background-image: linear-gradient(to right, rgb(0, 173, 0), rgb(0, 88, 0));
+    
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 900px;
+    height: 200px;
+}
+
+div#character {
+    background-color: #ff0000;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 5px #fff;
+    
+    position: relative;
+    width: 20px;
+    height: 50px;
+    top: 148px;
+    margin-left: 12px;
+}
+
+
+div#obstacle {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px red;
+
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 112px;
+    animation: obstacle 2s infinite linear;
+}
